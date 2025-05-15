@@ -20,5 +20,5 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: shimmer 10s infinite linear;
+  animation: shimmer 5s infinite linear;
 }
