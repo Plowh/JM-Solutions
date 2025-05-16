@@ -22,3 +22,7 @@
   color: transparent;
   animation: shimmer 5s infinite linear;
 }
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
