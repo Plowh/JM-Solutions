@@ -9,21 +9,9 @@
   <script src="hoverglow.js"></script>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-
-  <style>
-    /* Custom font class */
-    .font-inter {
-      font-family: 'Inter', sans-serif;
-    }
-
-    /* Glow text effect */
-    .glow-text {
-      text-shadow:
-        0 0 6px rgba(244, 63, 94, 0.8),
-        0 0 10px rgba(244, 63, 94, 0.6);
-    }
-  </style>
+  <script src="statusapi.js"></script>
 </head>
+
 <body class="bg-gray-900 text-white min-h-screen flex flex-col">
   <!-- Navbar -->
   <nav class="bg-gray-900/60 backdrop-blur-lg border-b border-gray-800 fixed top-0 w-full z-50 shadow-md">
@@ -122,7 +110,7 @@
           id="r6lite"
           class="glow-card bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl shadow-xl border border-gray-700 hover:shadow-rose-600/40 transition-transform duration-300 hover:scale-[1.05] cursor-pointer flex items-center justify-between"
         >
-          <span class="text-lg font-semibold font-inter glow-text">R6 Lite</span>
+          <span class="text-lg font-extrabold font-inter glow-text">R6 Lite</span>
           <span class="text-sm text-gray-400 font-inter glow-text">Loading...</span>
         </div>
 
@@ -160,7 +148,6 @@
     </div>
   </footer>
 
-  <script src="statusapi.js"></script>
   <script>
     AOS.init();
   </script>

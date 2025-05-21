@@ -21,7 +21,7 @@ async function fetchStatus(name) {
   try {
     const res = await fetch(apiURL + name);
     const data = await res.json();
-    const element = document.getElementById(name);
+    const element = document.querySelector(`#${name} span:nth-child(2)`);
 
     if (data.success) {
       const status = data.variable;
