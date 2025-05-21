@@ -26,7 +26,7 @@ async function fetchStatus(name) {
     if (data.success) {
       const status = data.variable;
 
-      element.textContent = `${displayName} is ${status}`;
+      element.textContent = `is ${status}`;
 
       
       element.classList.remove("text-green-400", "text-yellow-400", "text-red-600", "text-gray-400");
