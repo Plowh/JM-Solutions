@@ -21,24 +21,25 @@ async function fetchStatus(name) {
   try {
     const res = await fetch(apiURL + name);
     const data = await res.json();
-    const element = document.querySelector(`#${name} span:nth-child(2)`);
+    const element = document.getElementById(`${name}-status`);
 
     if (data.success) {
       const status = data.variable;
+      const capitalizedStatus = status.charAt(0).toUpperCase() + status.slice(1).toLowerCase();
 
-      element.textContent = `is ${status}`;
+      element.textContent = capitalizedStatus;
 
-      
+      // tailwind classes
       element.classList.remove("text-green-400", "text-yellow-400", "text-red-600", "text-gray-400");
       element.classList.add(getColorClass(status));
     } else {
-      element.textContent = `${displayName}: ${data.message}`;
+      element.textContent = data.message || "Unavailable";
       element.classList.remove("text-green-400", "text-yellow-400", "text-red-600");
       element.classList.add("text-gray-400");
     }
   } catch (err) {
-    const element = document.getElementById(name);
-    element.textContent = `${displayName}: Error fetching status`;
+    const element = document.getElementById(`${name}-status`);
+    element.textContent = "Error";
     element.classList.remove("text-green-400", "text-yellow-400", "text-red-600");
     element.classList.add("text-gray-400");
   }
