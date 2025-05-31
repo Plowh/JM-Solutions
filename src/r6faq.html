@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Status - JM Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwindconfig.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="hoverglow.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="statusapi.js"></script>
+</head>
+
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <nav class="bg-gray-900/60 backdrop-blur-lg border-b border-gray-800 fixed top-0 w-full z-50 shadow-md">
+    <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-4">
+      <a href="index.html" class="flex items-center space-x-3">
+        <span class="text-2xl font-semibold text-white hover:text-rose-500 hover:drop-shadow-[0_0_8px_#f43f5e] transition-all">JM Solutions</span>
+      </a>
+
+      <div class="flex space-x-4 md:order-2">
+        <a href="https://discord.com/invite/2azx3GbPbz">
+          <button
+            class="bg-rose-500 hover:bg-rose-500 text-white font-medium rounded-lg text-sm px-6 py-3 shadow-md transition-shadow duration-400 ease-in-out hover:shadow-[0_0_12px_3px_rgba(244,63,94,0.6)] focus:outline-none focus:ring-2 focus:ring-rose-500"
+          >
+            Discord
+          </button>
+        </a>
+
+        <button
+          data-collapse-toggle="navbar-cta"
+          type="button"
+          class="md:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-gray-400 hover:bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-600"
+          aria-controls="navbar-cta"
+          aria-expanded="false"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+        <ul class="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0 text-center w-full md:w-auto">
+          <li>
+            <a
+              href="https://jmsolutions.mysellauth.com/"
+              class="block relative py-2 px-4 text-gray-300 font-medium transition duration-200 hover:text-white hover:drop-shadow-[0_0_6px_rgba(244,63,94,0.7)] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-rose-500 hover:after:w-full after:transition-all after:duration-300"
+              >Store</a
+            >
+          </li>
+          <li>
+            <a
+              href="status.html"
+              class="block relative py-2 px-4 text-gray-300 font-medium transition duration-200 hover:text-white hover:drop-shadow-[0_0_6px_rgba(244,63,94,0.7)] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-rose-500 hover:after:w-full after:transition-all after:duration-300"
+              >Status</a
+            >
+          </li>
+          <li>
+            <a
+              href="guides.html"
+              class="block relative py-2 px-4 text-gray-300 font-medium transition duration-200 hover:text-white hover:drop-shadow-[0_0_6px_rgba(244,63,94,0.7)] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-rose-500 hover:after:w-full after:transition-all after:duration-300"
+              >Guides</a
+            >
+          </li>
+          <li>
+            <a
+              href="vouches.html"
+              class="block relative py-2 px-4 text-gray-300 font-medium transition duration-200 hover:text-white hover:drop-shadow-[0_0_6px_rgba(244,63,94,0.7)] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-rose-500 hover:after:w-full after:transition-all after:duration-300"
+              >Vouches</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="block relative py-2 px-4 text-gray-300 font-medium transition duration-200 hover:text-white hover:drop-shadow-[0_0_6px_rgba(244,63,94,0.7)] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-rose-500 hover:after:w-full after:transition-all after:duration-300"
+              >Support</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="pt-24"></div>
+
+<section class="ml-20">
+<h1>Rainbow 6 F.A.Q</h1>
+<h2>Frequently Asked Questions (FAQ)</h2>
+
+<h3>Driver Failed to Load - How to Fix?</h3>
+<p>If your driver fails to load, try the following solutions:</p>
+<ol class="list-decimal">
+  <li>Run the BSOD Fix – Execute the bsod.bat fix provided.</li>
+  <li>Disable Driver Signature Enforcement – Follow this tutorial for guidance.</li>
+  <li>Permanently Disable Windows Defender – Ensure Windows Defender is turned off.</li>
+  <li>Permanently Disable Windows Firewall – Make sure Windows Firewall is completely disabled.</li>
+  <li>Update Your Drivers – Ensure all necessary drivers (GPU, chipset, etc.) are up to date.</li>
+</ol>
+
+<div class="mt-20"></div>
+
+<h3>Cheat Injects but Menu Doesn't Show Up</h3>
+<p>If you hear a beep after loading into the game but the menu does not appear, follow these steps:</p>
+<ol class="list-decimal">
+    <li>Run the Game on DX12 – Ensure that DirectX 12 is enabled.</li>
+    <li>Check Your GPU Drivers – Your drivers might be outdated!</li>
+    <li>Use Borderless Fullscreen Mode – Change your display mode in settings.</li>
+    <li>For Windows 11 Users – Run the w11 fix.bat file.</li>
+    <li>Verify Game Files – Use the game client to check for corrupted or missing files.</li>
+    <li>Disable Virtualization – Ensure virtualization is turned off in your BIOS settings.</li>
+    <li>Disable Core Isolation – Follow the instructions below.</li>
+    <li>Disable Third-Party Overlays – Turn off overlays like Discord, NVIDIA GeForce Experience, and MSI Afterburner.</li>
+    <li>Run as Administrator – Ensure both the game and the injector are running with admin privileges.</li>
+
+</ol>
+
+<div class="mt-20"></div>
+
+<h3>How to Disable Virtualization & Core Isolation?</h3>
+<p>Some cheats and applications require Virtualization and Core Isolation to be disabled. Follow these steps:</p>
+<h3>Disable Virtualization in BIOS:</h3>
+<ol class="list-decimal">
+    <li>Restart your PC and enter the BIOS/UEFI (Usually F2, DEL, or ESC during boot).</li>
+    <li>Look for Intel VT-x or AMD-V under Advanced, CPU Configuration, or Processor Settings.</li>
+    <li>Disable it, then save and exit the BIOS.</li>
+</ol>
+
+<div class="mt-20"></div>
+
+<h3>Disable Core Isolation in Windows:</h3>
+<ol class="list-decimal">
+    <li>Press Windows Key + S, type Core Isolation, and open Core Isolation Settings.</li>
+    <li>Toggle Memory Integrity to Off.</li>
+    <li>Restart your PC.</li>
+</ol>
+
+<div class="mt-20"></div>
+
+<h3>How to Disable Firewalls and Add Exception for loader.exe</h3>
+<p>If your firewall or antivirus is blocking the program, follow these steps:</p>
+<h3>Disable Windows Firewall:</h3>
+<ol class="list-decimal">
+    <li>Open Control Panel and go to System and Security.</li>
+    <li>Click Windows Defender Firewall.</li>
+    <li>Select Turn Windows Defender Firewall on or off (left sidebar).</li>
+    <li>Check Turn off Windows Defender Firewall for both Public and Private networks.</li>
+    <li>Click OK.</li>
+
+
+</ol>
+</section> 
+
+  <footer class="bg-gray-800 text-gray-400 py-6 mt-12" data-aos="fade-up">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <p>&copy; 2025 JM Solutions. All rights reserved.</p>
+      <p class="text-sm">Made by Plowh @ JM Solutions</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>
