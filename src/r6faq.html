@@ -148,8 +148,147 @@
     <li>Select Turn Windows Defender Firewall on or off (left sidebar).</li>
     <li>Check Turn off Windows Defender Firewall for both Public and Private networks.</li>
     <li>Click OK.</li>
+</ol>
 
+<div class="mt-20"></div>
 
+<h3>Add an Exception for loader.exe in Windows Defender:</h3>
+<ol class="list-decimal">
+  <li>Open Windows Security.</li>
+  <li>Go to Virus & threat protection.</li>
+  <li>Click Manage settings under Virus & threat protection settings.</li>
+  <li>Scroll down and select Add or remove exclusions.</li>
+  <li>Click Add an exclusion, choose File, and select loader.exe.</li>
+</ol>
+
+<div class="mt-20"></div>
+
+<h3>Adding Exception in Popular Antivirus Software:</h3>
+<h3>For Avast:</h3>
+<ol class="list-decimal">
+  <li>Open Avast Antivirus.</li>
+  <li>Go to Menu > Settings > General > Exceptions.</li>
+  <li>Click Add Exception and select loader.exe.</li>
+</ol>
+<h3>For Bitdefender:</h3>
+<ol class="list-decimal">
+  <li>Open Bitdefender and go to Protection > Antivirus.</li>
+  <li>Click Manage Exceptions and add loader.exe.</li>
+</ol>
+
+<h3>For Kaspersky:</h3>
+<ol class="list-decimal">
+  <li>Open Kaspersky and go to Settings > Additional > Threats and Exclusions.</li>
+  <li>Click Specify Trusted Applications and add loader.exe.</li>
+</ol>
+
+<h3>For Norton:</h3>
+<ol class="list-decimal">
+  <li>Open Norton Antivirus and go to Settings > Antivirus.</li>
+  <li>Click Scans and Risks, scroll to Exclusions, and add loader.exe.</li>
+</ol>
+
+<h2>If your exclusion isn’t being added do this:</h2>
+<h3>Run as Administrator</h3>
+<ol class="list-decimal">
+  <li>Open Windows Security → "Virus & threat protection" → "Manage settings" under "Virus & threat protection settings"</li>
+  <li>Scroll down to "Exclusions" and click "Add or remove exclusions"</li>
+  <li>If prompted, click "Yes" on the UAC prompt (if it doesn't show up, manually run Windows Security as an admin).</li>
+</ol>
+
+<h3>Check Group Policy / Registry Restrictions</h3>
+<ol class="list-decimal">
+  <li>If you're on a work/school PC, an admin might have blocked exclusions.</li>
+  <li>Check if Defender is managed:
+    <li>Open Command Prompt as Admin</li>
+    <li>Run:</li> <!--add powershell here-->
+    <li>If DisableExclusion is set to 1, exclusions are disabled.</li>
+  </li>
+</ol>
+
+<h3>Disable Tamper Protection (Temporarily)</h3>
+<ol class="list-decimal">
+  <li>Go to Windows Security → "Virus & threat protection" → "Manage settings"</li>
+  <li>Scroll down to "Tamper Protection" and turn it off</li>
+  <li>Now, try adding the exclusion again.</li>
+</ol>
+
+<h3>Add Exclusion via PowerShell</h3>
+<p>Try adding it manually with PowerShell (run as admin):</p>
+<!--Powershell stuff-->
+<p>or for a specific file:</p>
+<!--Powershell stuff-->
+<p>Then check:</p>
+<!--Powershell stuff-->
+<h3>Reset Windows Security</h3>
+<p>If nothing works, reset Defender settings:</p>
+<!--Powershell stuff-->
+<p>or reinstall with:</p>
+<!--Powershell stuff-->
+
+<div class="mt-20"></div>
+
+<h3>How to Enable DX12?</h3>
+<p>To enable DirectX 12:</p>
+<ol>
+  <li class="list-disc">Non-Steam Version: Click the down arrow next to the launch icon and select DX12.</li> 
+  <li class="list-disc">Steam Version:
+    <li class="list-decimal">Open Steam and right-click on Rainbow Six Siege.</li>
+    <li class="list-decimal">Go to Properties > General Tab > Set Launch Options.</li>
+    <li class="list-decimal">Add dx12 to the launch options.</li>
+  </li>
+</ol>
+
+<h2>If -dx12 isn’t working on steam do this:</h2>
+<h3>Step 1: Install Graphics Tools</h3>
+<ol class="list-decimal">
+  <li>Open Settings → Go to Apps → Select Optional Features → Click Add a feature.</li>
+  <li>Wait for the list to load. If the list doesn't load in a few minutes:
+    <li class="list-disc">Press CTRL + SHIFT + ESC to open Task Manager.</li>
+    <li class="list-disc">Find "Settings", right-click it, and select End Task.</li>
+    <li class="list-disc">Repeat the previous step.</li>
+  </li>
+<li>Once the list loads, locate Graphics Tools, select it, and click Install.</li>
+<li>Wait for the installation process to complete.</li>
+</ol>
+
+<div class="mt-20"></div>
+
+<h2>Step 2: Open the DirectX Control Panel</h2>
+<ol class="list-decimal">
+  <li>Press Windows Key + R to open the Run window.</li>
+  <li>Type: dxcp1</li>
+  <li>Press Enter</li>
+</ol>
+
+<div class="mt-20"></div>
+
+<h3>Step 3: Configure Direct3D Settings</h3>
+<ol class="list-decimal">
+  <li>In the Direct3D 10/11/12 tab, click Edit List....</li>
+  <li>Click the "..." button, browse for your game's main executable file, and click Add.</li>
+  <li>Click OK to confirm the addition.</li>
+  <li>Any additional executables you want to run with these settings can be added in the same manner.</li>
+</ol>
+
+<div class="mt-20"></div>
+
+<h2>Step 4: Adjust Device Settings</h2>
+<ol class="list-decimal">
+  <li>Once the settings window becomes fully clickable, scroll down to Device Settings.</li>
+  <li>Check "Disable Feature Level Upgrade".</li>
+  <li>Choose a version next to "Feature level limit".
+    <li class="list-disc">Make sure the version selected is supported by the game; otherwise, the game may fail to launch.</li>
+    <li class="list-disc">If the game gives a DirectX fatal error, consider selecting a different version.</li>
+  </li>
+</ol>
+
+<div class="mt-20"></div>
+
+<h2>Final Step: Apply and Launch</h2>
+<ol class="list-decimal">
+  <li>Click OK to save your changes.</li>
+  <li>Launch your game.</li>
 </ol>
 </section> 
 
