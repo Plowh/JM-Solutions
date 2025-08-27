@@ -1,8 +1,6 @@
 const cheats = {
   r6lite: "R6 Lite",
-  r6Full: "R6 Full",
-  r6UA: "R6 Unlock All",
-  r6Recoil: "R6 No Recoil"
+  "b06-lite": "BO6 Lite"
 };
 
 const apiURL = "https://tassamai-0eb2bce07b49.herokuapp.com/api/status?name=";
