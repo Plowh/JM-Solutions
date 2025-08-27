@@ -26,3 +26,9 @@
 .font-inter {
   font-family: 'Inter', sans-serif;
 }
+.characters{
+
+  border-radius: 1rem;
+  mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+}
